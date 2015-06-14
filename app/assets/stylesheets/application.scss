@@ -1,0 +1,162 @@
+		/*
+		* This is a manifest file that'll be compiled into application.css, which will include all the files
+		* listed below.
+		*
+		* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+		* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+		*
+		* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+		* compiled file so the styles you add here take precedence over styles defined in any styles
+		* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+		* file per style scope.
+		*
+		*= require font-awesome
+		*= require_tree .
+		*= require_self
+		*/
+		div {
+			max-height: 400px;
+		}
+		html,body {
+		height:100%;
+		left: 0;
+		right: 0;
+		}
+		@import "bootstrap-sprockets";
+		@import "bootstrap";
+		
+		
+		html, body, li, a, p, h1, h2, h3, h4 {
+		font-family: 'Raleway', sans-serif;
+		}
+		.navbar  {
+		border-radius: 0;
+		margin-bottom: 0;
+		border: none
+		}
+		
+		.navbar-right {
+		height: 100%;
+		margin-right: -30px;
+		}
+		.navbar-right li{
+		text-align: center;
+		font-weight: bold;
+		height: 100%;
+		}
+
+		.navbar-inverse {
+		border-color: #fff;
+		background: #69D2E7;
+		}
+		
+		.navbar-inverse .navbar-nav > li > a {
+		color: #FFF;
+		}
+		
+		.navbar-right li:nth-child(even){
+		background: #354458;
+		}
+		.navbar-right li:nth-child(odd){
+		background: #EB7260;
+		}
+		.navbar-right li:hover:nth-child(even){
+		background: #EB7260;
+		}
+		.navbar-right li:hover:nth-child(odd){
+		background: #354458;
+		}
+
+		.navbar-brand img{
+		margin-top: -7px;
+		height: 40px; 
+		width: 200px;
+		}
+
+		.hero-unit {
+			background: url('surface.png') center center no-repeat;
+			background-size: cover;
+			width: 100%;
+			height: 400px;
+			opacity: .3;
+			box-sizing: border-box;
+		}
+
+		.hero-text {
+			text-align: center;
+			top: -250px;
+			position: relative;
+		}
+		.hero-text h1 {
+			color: #FA6900;
+		}
+		.hero-text a{
+			font-weight: bold;
+		}
+		 
+		#postbag {
+			text-align: center;
+			height: 500px;
+		} 
+
+		#footer  {
+			position:relative;
+			background: #0C090A;
+		}
+
+		//.container-fluid {
+		//	padding-left: 0 !important ;
+		//	padding-right: 0 !important;
+		//}
+
+		.links, .social, .newsletter, .copyright{
+		padding-top: 20px;
+		}
+
+		.links, .social, .newsletter, .copyright a{
+			list-style: none;
+			text-align: center;
+			text-decoration: none;
+			color: #737373;
+		}
+
+		.links, .social, .newsletter, .copyright li {
+			list-style: none;
+			text-align: center;
+			color: #fff;
+		}
+		
+		.navbar-btn {
+			text-align: center;
+		}
+
+		.sidein {
+			top: 50%;
+			font-weight: bold;
+			transform: rotate(90deg);
+			position: fixed;
+			margin-left: -18px;
+			z-index: 19999;
+			border: none;
+			border-radius: 3px;
+		}
+
+		.sideout {
+			top: 50%;
+			font-weight: bold;
+			transform: rotate(90deg);
+			position: fixed;
+			margin-left: -26px;
+			z-index: 19999;
+			border: none;
+			border-radius: 3px;
+		}
+
+		// font-awesome icon color
+		.fa-heart {
+			color: #E41B17;
+		}
+
+		.fa-coffee {
+			color: #D89740;
+		}

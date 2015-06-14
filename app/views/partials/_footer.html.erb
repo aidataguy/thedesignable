@@ -1,0 +1,40 @@
+<div id="footer" class="container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4">
+				<ul class="links">
+					<li><h4>Links</h4></li>
+					<%=link_to "Faq", pages_faq_path %>
+					<li><%=link_to "The Company", pages_thecompany_path %></li>
+					<li><%=link_to "Terms & Conditions", pages_tandc_path %></li>
+				</ul>
+			</div>
+			<div class="divider"></div>
+			<div class="col-xs-4">
+				<ul class="social">
+					<li><h4>We're Social</h4></li>
+					<li><i class="fa fa-twitter">&nbsp;<%= link_to"Twitter", "https://twitter.com/thedesignable"%></i></li>
+					<li><i class="fa fa-facebook-square">&nbsp;<%= link_to"Facebook", "https://twitter.com/thedesignable"%></i></li>
+					<li><i class="fa fa-google-plus-square">&nbsp;<%= link_to"Facebook", "https://twitter.com/thedesignable"%></i></li>
+					<li><i class="fa fa-youtube">&nbsp;<%= link_to"Facebook", "https://twitter.com/thedesignable"%></i></li>
+				</ul>
+			</div>
+			<div class="col-xs-4">
+				<ul class="newsletter">
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<div class="col-xs-12">
+				<ul class="copyright">
+					<li><h4>Made with <i class="fa fa-heart fa-1x"></i> &amp;&nbsp;a lot of <i class="fa fa-coffee fa-1x"></i></h4></li>
+					<li>&nbsp;&copy; All Rights-Reserved <%= Time.now.year %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

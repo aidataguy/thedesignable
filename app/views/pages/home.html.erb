@@ -1,0 +1,22 @@
+<div class="hero-unit"></div>
+<div class="container hero-text">
+	<div class="row-fluid ">
+			<div class="span-12 ">
+				<h1>Hey There! Nice To Meet You</h1>
+				<%= link_to "Take a tour", pages_tour_path, class: "btn btn-success btn-large "%>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div id="postbag" class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 postview">
+			<h1>Our Blog feed</h1>
+			<p><% @posts.each do |post| %></p>
+			<p><%= link_to post.title, post %></p>
+			<%end%>
+		</div>
+	</div>
+</div>	
+
