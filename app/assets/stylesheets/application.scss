@@ -14,18 +14,19 @@
 		*= require_tree .
 		*= require_self
 		*/
-		div {
-			max-height: 400px;
-		}
+		//iv {
+		//	max-height: 400px;
+		//}
 		
 		@import "bootstrap-sprockets";
 		@import "bootstrap";
 
-		html, body, #container {	
+		html, body, #container, #container-fluid {	
 		height: 100%;	
 		}
 
-		body > #container, #container-fluid{
+
+		body > .container, .container-fluid{
 			height: 100%;
 		}
 		
@@ -33,15 +34,17 @@
 		font-family: 'Raleway', sans-serif;
 		}
 		.navbar  {
+		position: fixed;
 		border-radius: 0;
-		margin-bottom: 0;
 		border: none;
 		width: 100%;
+		z-index: 1;
 		}
 		
 		.navbar-right {
 		height: 100%;
 		background: #69D2E7;
+		padding-right: -40px;
 		}
 		.navbar-right li{
 		text-align: center;
@@ -90,19 +93,24 @@
 			font-weight: bold;
 		}
 		 
-		#postbag {
-			text-align: center;
-			height: 500px;
+		.postbag {
+		text-align: center;
 		} 
 
 		#footer  {
-			position: relative;
+			width: 100%;
+			clear: both;
 			background: #0C090A;
-			z-index: 10;
+			height: 260px;
 		}
 
 		#content {
-			padding-bottom: 250px;
+			  min-height: 100%;
+			  top: 30px;
+			  height: auto !important;
+			  height: 100%;
+			  margin: 0 auto -260px;
+			  padding: 50px 0 260px;
 		}
 
 		.links, .social, .newsletter, .copyright, .community{
