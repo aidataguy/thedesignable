@@ -17,14 +17,17 @@
 		div {
 			max-height: 400px;
 		}
-		html,body {
-		height:100%;
-		left: 0;
-		right: 0;
-		}
+		
 		@import "bootstrap-sprockets";
 		@import "bootstrap";
-		
+
+		html, body, #container {	
+		height: 100%;	
+		}
+
+		body > #container, #container-fluid{
+			height: 100%;
+		}
 		
 		html, body, li, a, p, h1, h2, h3, h4 {
 		font-family: 'Raleway', sans-serif;
@@ -32,12 +35,13 @@
 		.navbar  {
 		border-radius: 0;
 		margin-bottom: 0;
-		border: none
+		border: none;
+		width: 100%;
 		}
 		
 		.navbar-right {
 		height: 100%;
-		margin-right: -30px;
+		background: #69D2E7;
 		}
 		.navbar-right li{
 		text-align: center;
@@ -54,18 +58,10 @@
 		color: #FFF;
 		}
 		
-		.navbar-right li:nth-child(even){
-		background: #354458;
-		}
-		.navbar-right li:nth-child(odd){
+		.navbar-right li:hover{
 		background: #EB7260;
 		}
-		.navbar-right li:hover:nth-child(even){
-		background: #EB7260;
-		}
-		.navbar-right li:hover:nth-child(odd){
-		background: #354458;
-		}
+
 
 		.navbar-brand img{
 		margin-top: -7px;
@@ -100,42 +96,55 @@
 		} 
 
 		#footer  {
-			position:relative;
+			position: relative;
 			background: #0C090A;
+			z-index: 10;
 		}
 
-		//.container-fluid {
-		//	padding-left: 0 !important ;
-		//	padding-right: 0 !important;
-		//}
+		#content {
+			padding-bottom: 250px;
+		}
 
-		.links, .social, .newsletter, .copyright{
+		.links, .social, .newsletter, .copyright, .community{
 		padding-top: 20px;
+		
 		}
 
-		.links, .social, .newsletter, .copyright a{
-			list-style: none;
-			text-align: center;
-			text-decoration: none;
-			color: #737373;
+		.links, .social, .newsletter, .copyright, .community ul{
+			font-weight: bold;
 		}
 
-		.links, .social, .newsletter, .copyright li {
+		.footer-sns{
 			list-style: none;
 			text-align: center;
 			color: #fff;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.links, .social, .newsletter, .copyright, .community li {
+			list-style: none;
+			text-align: center;
+		}
+		.links, .social, .newsletter, .copyright .community i{
+			text-decoration: none;
+			color: #EB7260;
 		}
 		
 		.navbar-btn {
 			text-align: center;
 		}
 
+		.submit {
+			background: #EB7260
+		}
+
 		.sidein {
 			top: 50%;
 			font-weight: bold;
-			transform: rotate(90deg);
+			//transform: rotate(90deg);
 			position: fixed;
-			margin-left: -18px;
+			margin-left: -10px;
 			z-index: 19999;
 			border: none;
 			border-radius: 3px;
@@ -159,4 +168,14 @@
 
 		.fa-coffee {
 			color: #D89740;
+		}
+
+		#blog {
+			text-align: center;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		#post{
+			text-align: center;
 		}
