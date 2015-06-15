@@ -1,9 +1,11 @@
-<div id="content"></div>
+<%= title "Articles" %>
 <div class="conatiner">
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><%= @post.title %></h1>
-				<p>Author: <%= @post.user.name %>, Created at <%= time_ago_in_words(@post.created_at) %></p>
+				<p>Author: <%= @post.user.name %>
+				<p><%= image_tag (@post.user.avatar.url(:thumb)) %></p>
+				<p> Created at <%= time_ago_in_words(@post.created_at) %></p>
 				<p><%= @post.description %></p>
 				<p><%= @post.body.to_s.html_safe %></p>
 				<div>
