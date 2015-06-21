@@ -26,4 +26,9 @@ class PagesController < ApplicationController
 
   def tandc
   end
+
+  def author
+    @author = User.find(params([id: "1"]))
+  end
+
 end

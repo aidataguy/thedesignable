@@ -26,7 +26,7 @@ Rails.application.routes.draw do
     end
     resources :comments
   end
-  resources :users 
-  resources :profiles 
-   root 'pages#home'
+  resources :users, only: [:show]
+
+  root 'pages#home'
 end

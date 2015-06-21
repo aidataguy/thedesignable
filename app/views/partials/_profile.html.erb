@@ -1,8 +1,0 @@
-<%= form_for ([@user, @user.profile.build]) do |f| %>
-	<p><%= f.text_field :name %></p>
-	<p><%= f.text_area :about %></p>
-	<p><%= f.text_area :country %></p>
-	<p><%= f.text_area :twitter %></p>
-	
-	<p><%= f.button :submit %></p>
-<% end %>
