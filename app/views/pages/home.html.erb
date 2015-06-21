@@ -1,4 +1,5 @@
 <%= title 'Home' %>
+<div id="postindex">
 	<div class="hero-unit"></div>
 		<div class="container hero-text">
 		<div class="row-fluid ">
@@ -8,14 +9,15 @@
 		</div>
 		</div>
 		</div>
-<div class="container postbag">
-	<div class="row">
-		<div class="col-xs-12 postview">
-			<h1>Our Blog feed</h1>
-			<p><% @posts.each do |post| %></p>
-			<p><%= link_to post.title, post %></p>
-			<%end%>
+	<div class="container postbag">
+		<div class="row">
+			<div class="col-xs-12 postview">
+				<h1>Our Blog feed</h1>
+				<p><% @posts.each do |post| %></p>
+				<p><%= link_to post.title, post %></p>
+				<%end%>
+			</div>
 		</div>
-	</div>
-</div>	
+	</div>	
+</div>
 

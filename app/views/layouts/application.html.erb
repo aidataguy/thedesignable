@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thedesignable - <%= yield :title %></title>
+  <%= favicon_link_tag 'favicon.ico'%>
+  <title> <%= yield :title %> - Thedesignable </title>
   <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css' %>
   <%= stylesheet_link_tag    'http://fonts.googleapis.com/css?family=Raleway:400,500,700' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
