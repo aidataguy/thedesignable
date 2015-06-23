@@ -14,10 +14,15 @@
 <body>
 
 <% if notice %>
+<div id="notice_wrap">
 <p class="notice"><%= notice %></p>
+</div>
 <% elsif alert %>
+<div id="notice_wrap">
 <p class="alert"><%= alert %></p>
+</div>
 <% end %>
+
 <%= render 'partials/navbar' %>
 <%# side button for login and log out %> 
    

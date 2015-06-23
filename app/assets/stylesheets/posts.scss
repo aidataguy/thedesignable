@@ -1,3 +1,59 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.pcontent{
+	margin: 50px 0 50px 0;
+	}		
+.cloud {
+	background:	rgba(105, 210, 231, 0.3);
+	border-radius: 5px 5px 5px 5px;
+	height: auto;
+	line-height: 1.5em;
+	.s { font-size: 0.8em; }
+	.m { font-size: 1.2em; }
+  	.l { font-size: 1.8em; }
+  	p{
+ 		padding: 50px 0 0 0;
+ 	}
+ }
+
+
+#post_wrap{
+	border: dotted 3px #69D2E7; 
+	margin: 10px 0 10px 0;
+	padding-left: 10px;
+}
+
+.tagbox {
+	text-align: center; 
+	color: #C60016;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 0.3em;
+}
+
+.ptime {
+	border: 1px #000;
+	background: rgba(67, 115, 223, 0.5);
+	color: #fff;
+	width: 60px;
+	height: 60px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#articles {
+			padding:60px 0 60px 0;
+		.sidebar{
+			text-align: center;
+			}
+		.author a{
+			font-weight: bold;
+			color: #fff;
+			}
+			.like .dislike{
+				text-decoration: none;
+				color: #69D2E7;
+				font-weight: bold;
+			}
+		}

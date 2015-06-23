@@ -1,12 +1,23 @@
-<div class="container">
+<%= title 'Blog' %>
+<div class="container pcontent">
 		<div class="row">
-			<div class="col-xs-12">
-				<%= title 'Blog' %>
+			<div class="col-xs-8">
 				<% @posts.each do |post| %>
+				<div id="post_wrap">
+				<p class="ptime"><%= post.created_at.strftime(" %d %a %b %y") %></p>
 					<p><%=link_to post.title, post%></p>
+					<p><%=post.description%></p>
+					<p class="fa fa-tags fa-1x tags">Tags: <%= raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
+					</div>
 				<% end %>				
+				
+			</div>
+			<div class="col-xs-4 cloud">
+				<h3 class="fa fa-cloud tagbox">Tags Cloud</h3>
+				<p> <% tag_cloud Post.tag_counts, %w{s m l} do |tag, css_class| %>
+			    <%= link_to tag.name, tag_path(tag.name), class: css_class %>
+			  	<% end %> </p>
 			</div>
 		</div>
 	</div>
-</div>	
 

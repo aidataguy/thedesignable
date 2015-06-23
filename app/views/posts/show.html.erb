@@ -1,26 +1,29 @@
-<%= title "Articles" %>
+<%= title @post.title %>
 <div id="articles">
 <div class="container">	
 	<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-8">
 				<h1><%= @post.title %></h1>
-				<p>Author: <%= @post.user.name%> </p> 
-				<p><%= image_tag (@post.user.avatar.url(:thumb)), class: "round" %></p>
 				<p> Created at <%= time_ago_in_words(@post.created_at) %></p>
 				<p><%= @post.description %></p>
-				<p><%= @post.body.to_s.html_safe %></p>
+				<p><%= @post.body.to_s.html_safe %></p><br>
+				<p class = "fa fa-tags fa-1x tags">Tags: <%= @post.tag_list %></p>
 		</div>
-		<div class="col-md-6">	
+
+		<div class="col-md-4 sidebar">	
+				<p><%= image_tag (@post.user.avatar.url(:thumb)), class: "round" %></p>
+				<h4>Created by:</h4>
+				<i class="author btn btn-danger"> <%= link_to @post.user.name, user_path(@post.user.id)%></i>
 				<h3>Comments</h3>
 				<%= pluralize(@post.comments.count, "Comment") %>
 				<p><% @comments.each do |comment|%></p>
 				<p>by <%= comment.user.name %>, about <%= time_ago_in_words(comment.created_at)%> ago</p>
 				<p><%= comment.content %></p>
 				<% end %>
-				<%= link_to like_post_path(@post), method: :get do %>
+				<%= link_to like_post_path(@post), class: "like", method: :get do %>
 				<%= pluralize(@post.get_upvotes.size, "Like") %>
 				<% end %>
-				<%= link_to dislike_post_path(@post), method: :get do %>
+				<%= link_to dislike_post_path(@post), class: "dislike", method: :get do  %>
 				<%= pluralize(@post.get_downvotes.size, "Dislike") %>
 				<% end %>
 				<% if @post.user == current_user %>

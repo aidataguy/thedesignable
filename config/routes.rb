@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   get 'pages/tandc'
 
+  get 'tags/:tag', to: 'posts#index', as: :tag
+
  resources :posts do
     member do
       get "like", to: "posts#upvote"

@@ -45,11 +45,14 @@
 		height: 100%;
 		background: #69D2E7;
 		padding-right: -40px;
-		}
-		.navbar-right li{
+		li{
 		text-align: center;
 		font-weight: bold;
 		height: 100%;
+		}
+		li:hover{
+		background: #EB7260;
+		}
 		}
 
 		.navbar-inverse {
@@ -61,11 +64,6 @@
 		color: #FFF;
 		}
 		
-		.navbar-right li:hover{
-		background: #EB7260;
-		}
-
-
 		.navbar-brand img{
 		margin-top: -7px;
 		height: 40px; 
@@ -85,14 +83,14 @@
 			text-align: center;
 			top: -250px;
 			position: relative;
-		}
-		.hero-text h1 {
+			h1 {
 			color: #FA6900;
 		}
-		.hero-text a{
+		 	a{
 			font-weight: bold;
 		}
-		 
+		}
+	 
 		.postbag {
 		text-align: center;
 		} 
@@ -114,13 +112,26 @@
 		}
 
 		.links, .social, .newsletter, .copyright, .community{
-		padding-top: 20px;
-		
+			padding-top: 20px;
+			ul{
+				font-weight: bold;
+			}
+			li {
+				list-style: none;
+				text-align: center;
+			}
+			i{
+				text-decoration: none;
+				color: #EB7260;
+			}
+			i.fa-heart {
+				color: #E41B17;
+			}
+			i.fa-coffee {
+				color: #D89740;
+			}
 		}
 
-		.links, .social, .newsletter, .copyright, .community ul{
-			font-weight: bold;
-		}
 
 		.footer-sns{
 			list-style: none;
@@ -130,15 +141,6 @@
 			text-decoration: none;
 		}
 
-		.links, .social, .newsletter, .copyright, .community li {
-			list-style: none;
-			text-align: center;
-		}
-		.links, .social, .newsletter, .copyright .community i{
-			text-decoration: none;
-			color: #EB7260;
-		}
-		
 		.navbar-btn {
 			text-align: center;
 		}
@@ -150,7 +152,6 @@
 		.sidein {
 			top: 50%;
 			font-weight: bold;
-			//transform: rotate(90deg);
 			position: fixed;
 			margin-left: -10px;
 			z-index: 19999;
@@ -170,13 +171,6 @@
 		}
 
 		// font-awesome icon color
-		.fa-heart {
-			color: #E41B17;
-		}
-
-		.fa-coffee {
-			color: #D89740;
-		}
 
 		#blog {
 			text-align: center;
@@ -187,10 +181,10 @@
 		#post{
 			text-align: center;
 		}
-
-		#articles {
-			padding-bottom: 60px;
+		.profile{
+			padding:60px 0 60px 0;
 		}
+
 
 		.round {
 			height: 150px;
@@ -200,6 +194,44 @@
 			color: #EB7260;
 		}
 
-		#postindex{
-			padding-bottom: 50px;
+		#notice_wrap {
+			position: absolute;
+			z-index: 999;
+			width: 100%;
+			top:0;
+			background: rgba(68, 157, 68, 0.5);
+		.notice, .alert {
+			font-family: 'Raleway', sans-serif;
+			text-align: center;
+			font-weight: bold;
+			color: #fff;
+			margin: 0;
+			letter-spacing: 0.1em;
 		}
+	}
+hr.separator {
+	 padding: 0; 
+	 border: none; 
+	 border-top: medium double #69D2E7; 
+	 color: #69D2E7; 
+	 text-align: center;
+}
+hr.separator::after{
+	content: "§"; 
+	display: inline-block; 
+	position: relative; 
+	top: -0.8em; 
+	font-size: 1.5em; 
+	padding: 0 0.25em; 
+	background: #fff;
+}
+
+.editor {
+	padding: 50px 0 50px 0;
+}
+
+.tags {
+	color: #EB7260;
+	font-weight: bold;
+	text-decoration: none;
+}

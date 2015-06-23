@@ -4,21 +4,23 @@
 <div class="column col-xs-7">
 <h2><%= @user.name %></h2>
 <hr class="separator">
-<h5>Hey there! I am Himanshu, Founder and Chief Architect of The Designable LLC. I am a *nix user since 2005 and a technology enthusiast. By day I am working as a code-ninja. I love coding in PHP, Rails, phantom JS and ember. I worked on various projects. When I am not working on my Mac, either i am playing PS3 or hanging out with my friends or you can find me typing 140 charaacter on twitter or dribbling or chattering on google plus. </h5> 
+<h5><%= @user.about%> </h5> 
 </div>
 
 <div class="column col-xs-5">
 
 <%= image_tag (@user.avatar.url(:thumb)), class: 'round' %>
-<h2> Connect with me!</h2>
-<div class="row">
-<div class="column col-xs-12">
-	
+<div class="sns">
+	<h2> Connect with me!</h2>
+	<hr>
+		<p><%= link_to '', @user.twitter, :target => "_blank", class: "fa fa-twitter fa-2x connect" %>
+		<%= link_to '', @user.facebook, :target =>  "_blank",class: "fa fa-facebook fa-2x connect" %>
+		<%= link_to '', :target =>  "_blank", class: "fa fa-google-plus fa-2x connect" %>
+		<%= link_to '', @user.dribble, :target =>  "_blank",  class: "fa fa-dribbble fa-2x connect" %>
+		<%= link_to '', @user.instagram, :target =>  "_blank",  class: "fa fa-instagram fa-2x connect" %>
+		<%= link_to '', @user.git, :target =>  "_blank",  class: "fa fa-git fa-2x connect" %> </p>
 </div>
-
 </div>
 </div>
-</div>
-	
 </div>
 

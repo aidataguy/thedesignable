@@ -16,3 +16,10 @@
 //= require turbolinks
 //= bootstrap-sprockets
 //= require_tree .
+$(document).ready(function(){
+	setTimeout(function(){
+		$('#notice_wrap').fadeOut("slow", function(){
+			$(this).remove();
+		})
+	}, 4500);
+});

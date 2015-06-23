@@ -15,6 +15,7 @@
 				<h1>Our Blog feed</h1>
 				<p><% @posts.each do |post| %></p>
 				<p><%= link_to post.title, post %></p>
+				<p><%= post.description%></p>
 				<%end%>
 			</div>
 		</div>

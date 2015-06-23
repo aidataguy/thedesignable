@@ -14,6 +14,7 @@ gem 'devise', '~> 3.5.1'
 gem 'ckeditor', '~> 4.1.2'
 gem "font-awesome-rails"
 gem 'acts_as_votable', '~> 0.10.0'
+gem 'acts-as-taggable-on', '~> 3.5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
