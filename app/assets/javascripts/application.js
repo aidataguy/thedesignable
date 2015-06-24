@@ -15,6 +15,7 @@
 //= require ckeditor/init
 //= require turbolinks
 //= bootstrap-sprockets
+//= require owl.carousel
 //= require_tree .
 $(document).ready(function(){
 	setTimeout(function(){
@@ -23,3 +24,25 @@ $(document).ready(function(){
 		})
 	}, 4500);
 });
+
+
+$(document).ready(function() {
+ $("#carousel").owlCarousel({
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem: true,
+      autoPlay: true,
+      stopOnHover:false,
+      //transitionStyle : "fade"
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+

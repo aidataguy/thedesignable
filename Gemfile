@@ -12,6 +12,7 @@ gem 'paperclip', '~> 4.2.2'
 gem 'simple_form', '~> 3.1.0'
 gem 'devise', '~> 3.5.1'
 gem 'ckeditor', '~> 4.1.2'
+gem 'owlcarousel-rails', '~> 1.1.3.3'
 gem "font-awesome-rails"
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'acts-as-taggable-on', '~> 3.5.0'

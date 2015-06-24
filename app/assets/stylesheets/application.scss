@@ -11,12 +11,11 @@
 		* file per style scope.
 		*
 		*= require font-awesome
+		*= require owl.carousel
+		*= require owl.theme
 		*= require_tree .
 		*= require_self
 		*/
-		//iv {
-		//	max-height: 400px;
-		//}
 		
 		@import "bootstrap-sprockets";
 		@import "bootstrap";
