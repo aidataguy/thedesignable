@@ -90,17 +90,6 @@
 		}
 		}
 	 
-		.postbag {
-		text-align: center;
-		} 
-
-		#footer  {
-			width: 100%;
-			clear: both;
-			background: #0C090A;
-			height: 260px;
-		}
-
 		#content {
 			  min-height: 100%;
 			  top: 30px;
@@ -211,6 +200,7 @@
 hr.separator {
 	 padding: 0; 
 	 border: none; 
+	 width: 300px;
 	 border-top: medium double #69D2E7; 
 	 color: #69D2E7; 
 	 text-align: center;
@@ -234,3 +224,9 @@ hr.separator::after{
 	font-weight: bold;
 	text-decoration: none;
 }
+#footer  {
+			width: 100%;
+			clear: both;
+			background: #0C090A;
+			height: 260px;
+		}

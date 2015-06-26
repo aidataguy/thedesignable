@@ -4,3 +4,53 @@
 #company {
 		margin: 50px 0 50px 0;
 }
+
+.description {
+	font-size: 18px;
+	padding-top: 50px;
+	text-align: center;
+	.brand-name{
+		color: #69D2E7;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}		
+
+#team{
+	padding: 50px 0 50px 0;
+	text-align: center;
+.panel{
+	text-align: center;
+	img{
+		padding-top: 10px;
+	}
+	.panel-heading{
+		text-decoration: none;
+		font-weight: bold;
+		a{
+			color: #EB7260;
+			font-weight: bold;
+		
+		}
+	}
+	.panel-body {
+		color: #69D2E7;
+		font-weight: bold;	
+	}
+}
+}
+
+.titles{
+	text-align: center; 
+	color: #69D2E7;
+	font-weight: bold;
+	text-shadow: 5px 10px 5px #B7B7B7;
+}
+
+.postbag {
+		text-align: center;
+		padding-bottom: 50px;
+		} 
+
+
+
