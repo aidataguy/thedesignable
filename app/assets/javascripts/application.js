@@ -16,7 +16,10 @@
 //= require turbolinks
 //= bootstrap-sprockets
 //= require owl.carousel
+//= require typed
+//= require nicholasjs
 //= require_tree .
+
 $(document).ready(function(){
 	setTimeout(function(){
 		$('#notice_wrap').fadeOut("slow", function(){
@@ -46,3 +49,9 @@ $(document).ready(function() {
  
 });
 
+$(function(){
+      $("#typeText").typed({
+            strings: ["Hey There!"," Glad To See You. :)", "We Design, We create", "Apps, Websites, Banner Designs","... and a lot more, you name it!","We Are The Designable LLC"],
+            typeSpeed: 100
+      });
+});

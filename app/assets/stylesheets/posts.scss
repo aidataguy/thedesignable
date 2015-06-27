@@ -34,12 +34,13 @@
 
 .ptime {
 	border: 1px #000;
-	background: rgba(67, 115, 223, 0.5);
+	background: rgba(12, 9, 10, 0.4);
 	color: #fff;
 	width: 60px;
 	height: 60px;
 	font-size: 18px;
 	font-weight: bold;
+	text-align: center;
 }
 
 #articles {
@@ -57,3 +58,7 @@
 				font-weight: bold;
 			}
 		}
+.ptitles {
+	font-weight: bold;
+	font-size: 35px;
+}

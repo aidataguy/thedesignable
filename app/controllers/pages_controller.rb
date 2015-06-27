@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   end
 
   def ourwork
+    
   end
 
   def plansandpricing
