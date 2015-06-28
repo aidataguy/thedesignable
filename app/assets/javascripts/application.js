@@ -11,9 +11,9 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require ckeditor/init
-//= require turbolinks
 //= bootstrap-sprockets
 //= require owl.carousel
 //= require typed

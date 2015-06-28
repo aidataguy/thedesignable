@@ -18,11 +18,11 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 	end
 
 	def update
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 		if @post.update(post_params)
 				redirect_to @post
 		else
@@ -64,7 +64,7 @@ class PostsController < ApplicationController
 	private
 
 	def find_post
-		@post = Post.find(params[:id])
+		@post = Post.friendly.find(params[:id])
 	end
 
 	def post_params

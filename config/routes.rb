@@ -30,5 +30,7 @@ Rails.application.routes.draw do
   end
   resources :users, only: [:show]
 
+  resources :galleries
+
   root 'pages#home'
 end

@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   end
 
   def thecompany
+    @user = User.find(1)
   end
 
   def ourwork
