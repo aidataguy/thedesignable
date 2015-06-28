@@ -1,14 +1,17 @@
 <%= title "Our Latest Works" %>
 <div class="container">
 	<div class="row">
-		<div class="col-xs-6 col-xs-offset-"></div>
+		<% @galleries.each do |gallery|%>
+		<div class="col-md-4">	
+			<p><%= image_tag (gallery.image.url(:medium)) %></p>
+			<p><%= link_to gallery.name, gallery_path(gallery.slug) %></p>
+			<p><%= gallery.created_at.strftime(" %d %a %b %y") %></p>
+			<p><%=gallery.description%></p>			
+		</div>
+		<%end%>
 
 	</div>
 
 </div>
-<% @gallery.each do |gallery|%>
-<%= image_tag (gallery.image.url(:medium)) %>
-<p><%= link_to gallery.name, gallery %></p>
-<p><%= gallery.created_at.strftime(" %d %a %b %y") %></p>
-<p><%=gallery.description%></p>
-<%end%>
+
+

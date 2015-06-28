@@ -7,7 +7,7 @@ class GalleriesController < ApplicationController
 	end
 
 	def index
-		@gallery = Gallery.all.order("created_at DESC")
+		@galleries = Gallery.all.order("created_at DESC")
 	end
 
 	def create 
@@ -21,11 +21,11 @@ class GalleriesController < ApplicationController
 	end
 
 	def show
-		@gallery = Gallery.friendly.find(params[:id])
+		@gallery = Gallery.friendly.find_by_slug(params[:id])
 	end
 
 	def update
-		@gallery = Gallery.find(params[:id])
+		@gallery = Gallery.friendly.find(params[:id])
 		if @gallery.update(gallery_params)
 				redirect_to @gallery
 		else
@@ -35,6 +35,7 @@ class GalleriesController < ApplicationController
 	end
 
 	private
+
 	def find_gallery
 		@gallery = Gallery.friendly.find(params[:id])
 	end
