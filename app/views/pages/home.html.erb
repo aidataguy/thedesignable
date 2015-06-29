@@ -19,7 +19,40 @@
 				<%end%>
 			</div>
 		</div>
-	</div>		
+	</div>
+	<div class="newproducts">
+		<div class="container-fluid">
+			<div class="row">
+				<h1 class="titles">Products Coming Soon</h1>
+				<div id="upcoming">
+					<div class="item">Barracuda Helpdesk&#8482;</div>
+					<div class="item">PhotoDesk&#8482;</div>
+					<div class="item">GetHired&#8482;</div>
+					<div class="item">Glued&#8482;</div>
+
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<div class="container-fluid clients">
+		<div class="row">
+			<h1 class="titles">Clients</h1>
+			<div id="client-carousel">
+				<% @galleries.each do |gallery|%>
+					<div class="item"><%= image_tag (gallery.image.url(:medium)) %>
+					<%= link_to gallery.name, gallery_path(gallery.slug) %></p>
+					</div>
+				<%end%>				
+			</div>
+		</div>
+	</div>
+	<div id="techs" class="container">
+		<div class="row">
+			<h1 class="titles">Technologies We Work</h1>
+			<%= image_tag('techs.png', class: 'img-responsive') %>
+		</div>
+	</div>
 </div>
 
 

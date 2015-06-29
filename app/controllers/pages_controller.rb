@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @posts = Post.last(5)
+    @galleries = Gallery.last(6)
   end
 
   def thecompany
