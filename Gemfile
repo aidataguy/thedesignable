@@ -18,6 +18,7 @@ gem 'acts_as_votable', '~> 0.10.0'
 gem 'acts-as-taggable-on', '~> 3.5.0'
 gem 'friendly_id', '~> 5.1.0'
 gem 'typedjs-rails', '~> 1.0.2'
+gem 'shareable', '~> 1.1.4'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views

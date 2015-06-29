@@ -54,3 +54,24 @@
 
 
 
+#pnp{
+	margin-top: 50px;
+	text-align: center;
+	.panel-heading{
+		font-weight: bold;
+	}
+	}
+
+.select a{
+		font-weight: bold;
+	}	
+
+
+.pricing{
+	transition: all .2s ease-in-out;
+	margin-top: 20px;
+}
+
+.pricing:hover{
+	transform: scale(1.1);
+}

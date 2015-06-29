@@ -1,28 +1,10 @@
-$(function() {
-  var hero = $('.hero-unit');
-  var backgrounds = ['url(<%= asset_path 'bg2.jpg'%>)', 'url(<%= asset_path 'bg3.jpg'%>)', 'url(<%= asset_path 'bg4.jpg'%>)','url(<%= asset_path 'bg5.jpg'%>)', 'url(<%= asset_path 'bg6.jpg'%>)', 'url(<%= asset_path 'bg7.jpg'%>)', 'url(<%= asset_path 'bg8.jpg'%>)'];
-  var current = 0;
-
-
-function nextBackground() {
-  hero.css(
-   'background',
-    backgrounds[current = ++current % backgrounds.length]
- );
-
- setTimeout(nextBackground, 5000);
- }
- setTimeout(nextBackground, 5000);
-   hero.css('background', backgrounds[0]);
- });
-
 $(document).ready(function() {
      
       $("#upcoming").owlCarousel({
      
           autoPlay: 3000, //Set AutoPlay to 3 seconds
      
-          items : 3,
+          items : 2,
           itemsDesktop : [1199,3],
           itemsDesktopSmall : [979,3]
     });

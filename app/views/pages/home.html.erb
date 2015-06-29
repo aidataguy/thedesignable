@@ -12,7 +12,7 @@
 	<div class="container postbag">
 		<div class="row">
 			<div class="col-xs-12 postview">
-				<h1>Our Blog feed</h1>
+				<h1 class="titles">Our Blog feed</h1>
 				<p><% @posts.each do |post| %></p>
 				<p><%= link_to post.title, post %></p>
 				<p><%= post.description%></p>
@@ -25,10 +25,18 @@
 			<div class="row">
 				<h1 class="titles">Products Coming Soon</h1>
 				<div id="upcoming">
-					<div class="item">Barracuda Helpdesk&#8482;</div>
-					<div class="item">PhotoDesk&#8482;</div>
-					<div class="item">GetHired&#8482;</div>
-					<div class="item">Glued&#8482;</div>
+					<div class="item">Barracuda Helpdesk&#8482;
+						<p>The Revolutionary Helpdesk</p>
+					</div>
+					<div class="item">PhotoDesk&#8482;
+					<p>The PhotoSharing Network</p>
+					</div>
+					<div class="item">GetHired&#8482;
+					<p>Hosted JobPortal Solution For Companies</p>
+					</div>
+					<div class="item">CodeGlue&#8482;
+					<p>Developers Network</p>
+					</div>
 
 				</div>
 			</div>
@@ -41,7 +49,7 @@
 			<div id="client-carousel">
 				<% @galleries.each do |gallery|%>
 					<div class="item"><%= image_tag (gallery.image.url(:medium)) %>
-					<%= link_to gallery.name, gallery_path(gallery.slug) %></p>
+					<p><%= link_to gallery.name, gallery_path(gallery.slug) %></p>
 					</div>
 				<%end%>				
 			</div>
@@ -49,7 +57,7 @@
 	</div>
 	<div id="techs" class="container">
 		<div class="row">
-			<h1 class="titles">Technologies We Work</h1>
+			<h1 class="titles">Technologies We Work With</h1>
 			<%= image_tag('techs.png', class: 'img-responsive') %>
 		</div>
 	</div>
