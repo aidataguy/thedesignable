@@ -1,4 +1,4 @@
 <%= title @gallery.name.capitalize %>
 <p class="titles"><%= @gallery.name.upcase %></p>
-<p><%= image_tag (@gallery.image.url(:large)) %></p>
+<p><%= image_tag (@gallery.image.url(:large)), class: "img-responsive" %></p>
 <p class="description"><%= @gallery.description %></p>

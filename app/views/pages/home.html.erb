@@ -15,40 +15,18 @@
 				<h1 class="titles">Our Blog feed</h1>
 				<p><% @posts.each do |post| %></p>
 				<p><%= link_to post.title, post %></p>
+				<p><%= image_tag (post.preview.url(:thumb)), class: 'scaled img-responsive'  %></p>
 				<p><%= post.description%></p>
 				<%end%>
 			</div>
 		</div>
 	</div>
-	<div class="newproducts">
-		<div class="container-fluid">
-			<div class="row">
-				<h1 class="titles">Products Coming Soon</h1>
-				<div id="upcoming">
-					<div class="item">Barracuda Helpdesk&#8482;
-						<p>The Revolutionary Helpdesk</p>
-					</div>
-					<div class="item">PhotoDesk&#8482;
-					<p>The PhotoSharing Network</p>
-					</div>
-					<div class="item">GetHired&#8482;
-					<p>Hosted JobPortal Solution For Companies</p>
-					</div>
-					<div class="item">CodeGlue&#8482;
-					<p>Developers Network</p>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		
-	</div>
 	<div class="container-fluid clients">
+		<h1 class="titles">Clients</h1>
 		<div class="row">
-			<h1 class="titles">Clients</h1>
 			<div id="client-carousel">
 				<% @galleries.each do |gallery|%>
-					<div class="item"><%= image_tag (gallery.image.url(:medium)) %>
+					<div class="item hcarousel"><%= image_tag (gallery.image.url(:thumb)), class: "img-responsive" %>
 					<p><%= link_to gallery.name, gallery_path(gallery.slug) %></p>
 					</div>
 				<%end%>				

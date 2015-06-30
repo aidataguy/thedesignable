@@ -3,8 +3,8 @@
 <div class="container">
 	<div class="row">
 		<% @galleries.each do |gallery|%>
-		<div class="col-md-4">	
-			<p class= "scaled"><%= image_tag (gallery.image.url(:medium)) %></p>
+		<div class="col-xs-4">	
+			<p class= "scaled"><%= image_tag (gallery.image.url(:medium)), class: "img-responsive" %></p>
 			<p><%= link_to gallery.name, gallery_path(gallery.slug) %></p>
 			<p><%= gallery.created_at.strftime(" %d %a %b %y") %></p>
 			<p><%=gallery.description%></p>			

@@ -21,8 +21,8 @@
 	text-align: center;
 .panel{
 	text-align: center;
-	img{
-		padding-top: 10px;
+	.user-image{
+		padding-top: 20px;
 	}
 	.panel-heading{
 		text-decoration: none;
@@ -44,7 +44,7 @@
 	text-align: center; 
 	color: #69D2E7;
 	font-weight: bold;
-	text-shadow: 5px 10px 5px #B7B7B7;
+	text-shadow: 5px 10px 5px #C0C0C0;
 }
 
 .postbag {
@@ -74,4 +74,9 @@
 
 .pricing:hover{
 	transform: scale(1.1);
+}
+
+.hcarousel {
+	padding-top: 30px;
+	height: 200px;
 }
