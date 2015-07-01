@@ -183,18 +183,18 @@
 			z-index: 999;
 			width: 100%;
 			top:0;
-			height: 50px;
-			background: rgba(68, 157, 68, 0.5);
-		.notice, .alert {
+		.notice, .alert{
 			font-family: 'Raleway', sans-serif;
 			text-align: center;
 			font-weight: bold;
-			color: #fff;
-			margin: 0;
 			padding-top: 15px;
+			color: #fff;
+			height: 50px;
+			margin: 0;
 			letter-spacing: 0.1em;
+			background: rgba(205, 0, 0, 0.6);
+			}
 		}
-	}
 hr.separator {
 	 padding: 0; 
 	 border: none; 

@@ -15,7 +15,7 @@
 				<h1 class="titles">Our Blog feed</h1>
 				<p><% @posts.each do |post| %></p>
 				<p><%= link_to post.title, post %></p>
-				<p><%= image_tag (post.preview.url(:thumb)), class: 'scaled img-responsive'  %></p>
+				<p class="iview img-responsive"><%= image_tag (post.preview.url(:thumb)) %></p>
 				<p><%= post.description%></p>
 				<%end%>
 			</div>
@@ -26,7 +26,7 @@
 		<div class="row">
 			<div id="client-carousel">
 				<% @galleries.each do |gallery|%>
-					<div class="item hcarousel"><%= image_tag (gallery.image.url(:thumb)), class: "img-responsive" %>
+					<div class="item hcarousel img-responsive"><%= image_tag (gallery.image.url(:thumb)) %>
 					<p><%= link_to gallery.name, gallery_path(gallery.slug) %></p>
 					</div>
 				<%end%>				

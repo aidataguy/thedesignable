@@ -27,7 +27,7 @@
 		<div class="row">
 			<div class="col-xs-6">
 				<div class="panel panel-default">
-				<p class="user-image"><%= image_tag (@user.avatar.url(:thumb)), class: "round " %></p>
+				<p class="user-image img-responsive"><%= image_tag (@user.avatar.url(:thumb)), class: "round " %></p>
 				<h1 class="panel-heading"><%= link_to @user.name, user_path(@user.slug) %></h1>
 				<p class="panel-body">
 					The Chief Architecture <br>
@@ -37,7 +37,7 @@
 			</div>
 			<div class="col-xs-6">
 				<div class="panel panel-default">
-				<p class="user-image"><%= image_tag (@user.avatar.url(:thumb)), class: "round" %></p>
+				<p class="user-image img-responsive"><%= image_tag (@user.avatar.url(:thumb)), class: "round" %></p>
 				<h1 class="panel-heading"><%= link_to @user.name, user_path(@user.slug) %></h1>
 				<p class="panel-body">
 					The Chief Architecture <br>
