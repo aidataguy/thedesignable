@@ -11,12 +11,15 @@
 		</div>
 	<div class="container postbag">
 		<div class="row">
-			<div class="col-xs-12 postview">
-				<h1 class="titles">Our Blog feed</h1>
+			<h1 class="titles">Our Blog feed</h1>
+			<div class="postview">				
 				<p><% @posts.each do |post| %></p>
+				<div class="col-xs-4 hpostwrap">
+				<div class="dtbox"><%= post.created_at.strftime(" %d %a %b %y") %></div>
 				<p><%= link_to post.title, post %></p>
-				<p class="iview img-responsive"><%= image_tag (post.preview.url(:thumb)) %></p>
+				<p class="iview img-responsive"><%= link_to image_tag(post.preview.url(:thumb)), post %></p>
 				<p><%= post.description%></p>
+				</div>
 				<%end%>
 			</div>
 		</div>

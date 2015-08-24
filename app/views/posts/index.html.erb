@@ -4,8 +4,8 @@
 			<div class="col-xs-8">
 				<% @posts.each do |post| %>
 				<div id="post_wrap">
-				<p class="ptime"><%= post.created_at.strftime(" %d %a %b %y") %></p>
-					<p class="ptitles"><%=link_to post.title, post%></p>
+				<div><p class="ptime"><%= post.created_at.strftime(" %d %a %b %y") %></p>
+					<p class="ptitles"><%=link_to post.title, post%></p></div>
 					<p class="preview"><%= image_tag (post.preview.url(:medium)), class: "img-responsive" %></p>
 					<p><%=post.description%></p>
 					<p class="fa fa-tags fa-1x tags">Tags: <%= raw post.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>

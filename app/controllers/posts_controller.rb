@@ -62,6 +62,12 @@ class PostsController < ApplicationController
 
 	private
 
+	def uniqueness_post_title
+		if post.title.where(title: self.title).exists?
+      errors.add(:title, "Title exists")
+    end
+  end
+
 	def find_post
 		@post = Post.friendly.find(params[:id])
 	end

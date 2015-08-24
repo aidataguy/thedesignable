@@ -51,7 +51,7 @@ $(document).ready(function() {
 
 $(function(){
       $("#typeText").typed({
-            strings: ["Hey There!"," Glad To See You. :)", "We Design, We create", "Apps, Websites, Banner Designs","... and a lot more, you name it!","We Are The Designable LLC"],
+            strings: ["Hey There!"," Glad To See You. :)", "We Design, We create", "Apps", "Websites &..", " much more","We Are The Designable LLC"],
             typeSpeed: 100
       });
 });

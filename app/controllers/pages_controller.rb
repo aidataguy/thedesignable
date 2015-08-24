@@ -16,6 +16,7 @@ class PagesController < ApplicationController
   end
 
   def tour
+    
   end
 
   def tutorialsandvideos

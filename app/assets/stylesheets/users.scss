@@ -11,3 +11,34 @@
 	padding: 60px 0 60px 0;
 
 }
+#site-forms{
+	margin: 0px auto;
+	background: #fff;
+	width: 400px;
+	height: auto;
+	padding: 40px;
+	color: #000;
+	border-radius: 5px;
+		a{
+		font-weight: bold;
+		padding: 30px 0;
+		text-decoration: none;
+	}
+	h2, p, .form-actions{
+		text-align: center;
+	}
+}		
+
+#prepgs{
+	padding: 50px 0;
+	background: #298EEA;
+.pgslg{
+		text-align: center;
+	}
+
+.form-buttons{
+	width: 100%;
+	font-weight: bold;
+	height: 40px;
+}
+}

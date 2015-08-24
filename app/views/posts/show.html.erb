@@ -6,7 +6,7 @@
 				<h1><%= @post.title %></h1>
 				<p> Created at <%= time_ago_in_words(@post.created_at)%> ago </p>
 				<p><%= @post.description %></p>
-				<p class="img-responsive"><%= @post.body.to_s.html_safe %></p><br>
+				<p><%= @post.body.to_s.html_safe %></p><br>
 				<p class = "fa fa-tags fa-1x tags">Tags: <%= @post.tag_list %></p>
 				<p><%= link_to like_post_path(@post), class: "like", method: :get do %>
 				<%= pluralize(@post.get_upvotes.size, "Like") %>
